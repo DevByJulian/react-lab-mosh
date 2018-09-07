@@ -8,11 +8,6 @@ class Counter extends Component {
 
     }
 
-    constructor() {
-        super();
-        this.handleIncrement = this.handleIncrement.bind(this);
-    }
-
 
 
     render() {
@@ -27,8 +22,8 @@ class Counter extends Component {
     }
 
 
-
-    handleIncrement() {
+// changing this to an arrow function would solve the 'this' issue w/o the need for constructor binding
+    handleIncrement = () => {
         console.log(this);
     }
 }
