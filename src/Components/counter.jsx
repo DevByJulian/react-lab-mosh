@@ -14,7 +14,7 @@ class Counter extends Component {
 
         return (
             <div>
-                <button onClick={this.handleIncrement} className="btn btn-secondary btn-sm m-2">Increment</button>
+                <button onClick={() => this.handleIncrement({id: 1})} className="btn btn-secondary btn-sm m-2">Increment</button>
                 <button onClick={this.handleDecrement} className="btn btn-primary btn-sm">Decrement</button>
                 <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
 
@@ -25,7 +25,8 @@ class Counter extends Component {
 
 
 // changing this to an arrow function would solve the 'this' issue w/o the need for constructor binding
-    handleIncrement = () => {
+    handleIncrement = (productId) => {
+        console.log(productId);
         this.setState({count: this.state.count + 1})
     }
 
