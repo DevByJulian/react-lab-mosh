@@ -28,31 +28,6 @@ class Movies extends Component {
         }
             </tbody>
         </table>
-         
-            // <div>
-            //     // <table>
-            //     //     <thead>
-            //     //         <tr>
-            //     //             <th>Title</th>
-            //     //             <th>Genre</th>
-            //     //             <th>Stock</th>
-            //     //             <th>Rate</th>
-            //     //         </tr>
-            //     //     </thead>
-            //     //     <tbody>
-            //     //         {this.state.movies.map(movie) => {
-                        
-            //     //             <tr key={movie._id}><td>{movie.title}</td></tr>
-            //     //             <tr key={movie._id}><td>{movie.title}</td></tr>
-                            
-            //     //         }
-                           
-            //     //         }
-
-
-            //     //     </tbody>
-            //     // </table>
-            // </div>
 
 
         
