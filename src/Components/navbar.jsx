@@ -1,12 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-const NavBar = (props) => {
+// const NavBar = (props) => {
+//     return (<nav className="navbar navbar-light bg-light">
+//         <a className="navbar-brand" href="#">
+//             Navbar <span className="badge badge-pill badge-secondary">{props.totalCounters}</span></a>
+//     </nav>);
+// }
+
+//same code as above after Destructuring
+
+const NavBar = ({totalCounters}) => {
     return (<nav className="navbar navbar-light bg-light">
         <a className="navbar-brand" href="#">
-            Navbar <span className="badge badge-pill badge-secondary">{props.totalCounters}</span></a>
+            Navbar <span className="badge badge-pill badge-secondary">{totalCounters}</span></a>
     </nav>);
 }
+ 
  
 
 
